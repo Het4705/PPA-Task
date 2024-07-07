@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #4caf4f;
+  --primary-color-hover: #1c801fcc;
+  --secondary-color: #4d4d4d;
+  --subheading-color: #717171;
+  --font-size-large: 1.5rem;
+  --secondary-background-color: #f5f7fa;
+  --primary-dark-background-color: #263238;
+}
+
+.clients-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.clients {
+  animation: scroll 15s linear infinite;
+}
+
+.clients img {
+  padding: 0 10px;
+  max-height: 80px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clients:hover {
+  animation-play-state: paused;
+}
